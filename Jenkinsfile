@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_REGION = 'ap-south-1'
         ECR_REGISTRY = '908228722199.dkr.ecr.ap-south-1.amazonaws.com'
-        ECR_REPOSITORY = 'patient-portal-'
+        ECR_REPOSITORY = 'patient-portal'
         IMAGE_TAG = "${env.BUILD_NUMBER}"
         ECR_IMAGE = "${ECR_REGISTRY}/${ECR_REPOSITORY}:${IMAGE_TAG}"
     }
